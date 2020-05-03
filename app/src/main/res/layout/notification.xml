@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notice"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/widget_album"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:contentDescription="这是专辑图片"
+        android:src="@mipmap/me" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingLeft="9dp"
+            android:paddingTop="9dp"
+            android:paddingRight="9dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/widget_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="歌名"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/widget_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/arrow" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/widget_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="歌手"
+                android:textColor="#A0A0A0"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/widget_prev"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                android:layout_weight="1"
+
+                android:src="@mipmap/rewindblack" />
+
+            <ImageView
+                android:id="@+id/widget_play"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                android:src="@mipmap/playblue" />
+
+            <ImageView
+                android:id="@+id/widget_next"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                android:layout_weight="1"
+
+                android:src="@mipmap/rewindblackright" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

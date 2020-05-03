@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="#F7F8FA"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.lint0t.redrockmusic.utils.MyRoundRectImageView
+            android:id="@+id/img_play_list_cover"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/me" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_play_list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="选一首想听的歌吧~"
+                android:textColor="#ff1c252a" />
+
+            <TextView
+                android:id="@+id/tv_play_list_author"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="佚名"
+                android:textColor="#ff0091ea"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:scaleType="center"
+                    android:src="@mipmap/playlist" />
+
+                <TextView
+                    android:id="@+id/tv_play_list_tracks"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Tracks"
+                    android:textColor="#758692"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@mipmap/dots" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17dp"
+            android:layout_weight="10"
+            android:gravity="center_vertical"
+            android:text="Songs"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/img_play_list_shaffle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@mipmap/shaffle" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D4DCE1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_play_list"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

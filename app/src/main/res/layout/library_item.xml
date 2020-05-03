@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+
+            android:id="@+id/frm_library_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <com.lint0t.redrockmusic.utils.MyRoundRectImageView
+                android:id="@+id/img_library_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:scaleType="centerCrop"
+
+                android:src="@mipmap/me" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:scaleType="center"
+                android:src="@mipmap/play" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_library_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp">
+
+
+            <TextView
+                android:id="@+id/tv_library_name_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Telluric"
+                android:textColor="#ff1c252a"
+                 />
+
+            <TextView
+                android:id="@+id/tv_library_author_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Matt Corby"
+                android:textColor="#ff0091ea"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:scaleType="center"
+                    android:src="@mipmap/playlist" />
+
+                <TextView
+                    android:id="@+id/tv_library_tracks_item"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="Matt Corby"
+                    android:textColor="#758692"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@mipmap/dots" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D4DCE1" />
+</LinearLayout>

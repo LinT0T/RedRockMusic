@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="10dp"
+    >
+
+    <com.lint0t.redrockmusic.utils.MyRoundRectImageView
+        android:id="@+id/img_cover_item"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/me" />
+
+    <TextView
+        android:id="@+id/tv_home_name_item"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="加载中"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tv_home_author_item"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="稍等片刻"
+        android:textSize="10sp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#0091EA" />
+
+</LinearLayout>

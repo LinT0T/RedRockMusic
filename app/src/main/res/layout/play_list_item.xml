@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_play_list_number_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="17dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#B7C4CB" />
+
+    <TextView
+        android:id="@+id/tv_play_list_name_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="加载中"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_play_list_time_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="17dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="00:00"
+        android:textColor="#B7C4CB" />
+</LinearLayout>
