@@ -3,12 +3,23 @@
 ## 功能介绍
 ---
 - 登录
-
+ ![image](https://github.com/LinT0T/RedRockMusic/blob/master/img/1.gif)
+  
+  
 - 首页，歌单，我的主页
-
+ ![image](https://github.com/LinT0T/RedRockMusic/blob/master/img/2.gif)
+   
+   
 - 歌单详情及播放
-
+ ![image](https://github.com/LinT0T/RedRockMusic/blob/master/img/3.gif)
+   
+ ![image](https://github.com/LinT0T/RedRockMusic/blob/master/img/4.gif)
+      
+ ![image](https://github.com/LinT0T/RedRockMusic/blob/master/img/5.gif)
 - 通知栏播放控制
+ ![image](https://github.com/LinT0T/RedRockMusic/blob/master/img/6.gif)
+   
+   
 ---
 ## 主要技术
 ---
